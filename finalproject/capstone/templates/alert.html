@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Post Form</title>
+    {% load static %}
+</head>
+<body>
+    <form id="dataPostForm">
+        <input type="text" id="product_id" placeholder="Product ID">
+        <input type="text" id="voltage" placeholder="Voltage">
+        <input type="text" id="current" placeholder="Current">
+        <input type="text" id="power" placeholder="Power">
+        <input type="text" id="energy" placeholder="Energy">
+        <input type="text" id="kVA" placeholder="kVA">
+        <input type="text" id="power_factor" placeholder="Power Factor">
+        <input type="text" id="billing" placeholder="Billing">
+        <button type="submit">Submit Data</button>
+    </form>
+    <script src="{% static 'js/data_post.js' %}"></script>
+</body>
+</html>

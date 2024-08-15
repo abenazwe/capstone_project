@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/static/css/design1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.signup-box {
+    width: 300px;
+    background: rgba(8, 8, 8, 0.989);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 white;
+}
+
+.signup-box h2 {
+    color: #f7f3f3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f8f4f4;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.textbox input::placeholder {
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.signup-link {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Create{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.signup-link a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}

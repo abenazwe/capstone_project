@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Meter</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/add_meter.css' %}">
+</head>
+<body>
+    <div class="title-box">
+        <h2>Add New Meter</h2>
+        <div class="nav-buttons">
+            <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+            <a href="{% url 'login_page' %}">Log Out</a>
+        </div>
+    </div>
+   
+    <div class="container">
+        <div id="form-container">
+            <form id="add-meter-form">
+                <p>Name: <input type="text" id="name-meter" placeholder="Enter name"></p>
+                <p>Location: <input type="text" id="meter-location" placeholder="Enter location"></p>
+                <button type="submit" id="addmeter">Add Meter</button>
+            </form>
+        </div> 
+    </div>
+    <script src="{% static 'js/add_meter.js' %}"></script>
+</body>
+</html>

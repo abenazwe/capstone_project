@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up </title>
+    {% load static %}
+    <link rel="stylesheet" type= "text/css" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <p class= "Create">Create An Account For The Smart Meter Application</p>
+            <form id="signupForm" method= "POST">
+                <div class="textbox">
+                    <input type="text" id="name" placeholder="Name" name="name" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" id="signupEmail" placeholder="Email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="signupPassword" placeholder="Password" name="password" required>
+                </div>
+                <input type="submit" class="btn" value="Sign Up">
+            </form>
+            <p class="signup-link">Already Have An Account? <a href="{% url 'login_page' %}">Log In</a></p>
+        </div>
+    </div>
+    <script src="{% static 'js/signup.js' %}"></script>
+</body>
+</html>

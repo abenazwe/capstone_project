@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/userpage.css' %}">
+</head>
+<body>
+    <div class="title-box">
+        <h2>Smart Meter Dashboard</h2>
+        <div class="nav-buttons">
+            <a href="{% url 'login_page' %}">Log Out</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="table-container">
+            <div id="data">
+                <p id="hiddenID" style="display: none;">
+                    {{product_id}} 
+                </p>
+                <p>Energy Consumption: <span id="energy-consumption"></span></p>
+                <p>Power: <span id="power-consumption"></span></p>
+                <p>Current: <span id="current-consumption"></span></p>
+                <p>Voltage: <span id="voltage-consumption"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/userpage.js' %}"></script>
+</body>
+</html>

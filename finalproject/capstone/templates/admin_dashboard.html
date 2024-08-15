@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" type= "text/css" href="{% static 'css/admindash.css' %}">
+</head>
+<body>
+    <div class="title-box">
+        <h2>Smart Meter Dashboard</h2>
+        <div class="nav-buttons">
+            <a href={% url 'add_meter_p' %}>Add Meter</a>
+            <a href={% url 'login_page' %}>Log Out</a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Location</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="recordsBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="{% static 'js/product_list.js' %}"></script>
+</body>
+</html>

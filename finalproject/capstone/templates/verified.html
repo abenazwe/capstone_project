@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification Failed</title>
+    {% load static %}
+    <link rel="stylesheet" type= "text/css" href="{% static 'css/verify.css' %}">
+    <script>
+        // Redirect to login page after 5 seconds
+        setTimeout(function() {
+            window.location.href = "{% url 'login_page' %}";
+        }, 5000);
+    </script>
+ 
+</head>
+
+<body>
+    <div class="container">
+        <h2>Email Verification Successful</h2>
+        <p>We were able to successfully verify your email. You can now access the Smart Meter App..</p>
+    </div>
+</body>
+
+</html>
